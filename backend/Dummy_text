@@ -1,0 +1,18 @@
+create table users(id int primary key auto_increment, username varchar(20) unique, password varchar(100), email varchar(30) unique, phone varchar(10) unique);
+
+insert into users(username, password, email, phone) values('naeem1', 'naeem123', 'naeem@gmail.com', '7867867860');
+
+
+CREATE TABLE feeds (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  post_title VARCHAR(255) NOT NULL,
+  date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  user_id INT,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+
+"username": "Irfans",
+ "password": "12ddd"
+ 
+ id, post_title, date, user_id
