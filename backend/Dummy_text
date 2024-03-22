@@ -12,7 +12,7 @@ CREATE TABLE feeds (
 );
 
 
-"username": "Irfans",
- "password": "12ddd"
+-- "username": "Irfans",
+--  "password": "12ddd"
  
- id, post_title, date, user_id
+--  id, post_title, date, user_id
